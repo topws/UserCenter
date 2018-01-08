@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F41DA53200323C100125C7D /* ExtensionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA52200323C100125C7D /* ExtensionManager.swift */; };
+		8F41DA6220039ED800125C7D /* ConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA6120039ED800125C7D /* ConstantManager.swift */; };
 		FCA88B86200263EA00CCAC34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B85200263EA00CCAC34 /* AppDelegate.swift */; };
 		FCA88B88200263EA00CCAC34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B87200263EA00CCAC34 /* ViewController.swift */; };
 		FCA88B8D200263EA00CCAC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA88B8C200263EA00CCAC34 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F41DA52200323C100125C7D /* ExtensionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionManager.swift; sourceTree = "<group>"; };
+		8F41DA6120039ED800125C7D /* ConstantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantManager.swift; sourceTree = "<group>"; };
 		FCA88B82200263EA00CCAC34 /* GFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA88B85200263EA00CCAC34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA88B87200263EA00CCAC34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				FCA88B85200263EA00CCAC34 /* AppDelegate.swift */,
 				FCA88B87200263EA00CCAC34 /* ViewController.swift */,
+				8F41DA52200323C100125C7D /* ExtensionManager.swift */,
+				8F41DA6120039ED800125C7D /* ConstantManager.swift */,
 				FCA88B8C200263EA00CCAC34 /* Assets.xcassets */,
 				FCA88B8E200263EA00CCAC34 /* LaunchScreen.storyboard */,
 				FCA88B91200263EA00CCAC34 /* Info.plist */,
@@ -134,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA88B88200263EA00CCAC34 /* ViewController.swift in Sources */,
+				8F41DA6220039ED800125C7D /* ConstantManager.swift in Sources */,
 				FCA88B86200263EA00CCAC34 /* AppDelegate.swift in Sources */,
+				8F41DA53200323C100125C7D /* ExtensionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,7 @@
 				FCA88B96200263EA00CCAC34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
