@@ -9,13 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-	static let whiteH:CGFloat = 200
+	static let whiteH:CGFloat = 110
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.init(hexColor: "b3b3b3")
-		setUpViews()
+
+		let topV:MainTopView = Bundle.main.loadNibNamed("MainTopView", owner: nil, options: nil)?.last as! MainTopView
+		topV.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: ViewController.whiteH)
+		self.view.addSubview(topV)
     }
 
 	func setUpViews() {

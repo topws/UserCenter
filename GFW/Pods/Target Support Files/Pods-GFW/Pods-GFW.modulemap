@@ -1,0 +1,6 @@
+framework module Pods_GFW {
+  umbrella header "Pods-GFW-umbrella.h"
+
+  export *
+  module * { export * }
+}
