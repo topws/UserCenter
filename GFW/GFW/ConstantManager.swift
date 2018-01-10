@@ -28,4 +28,16 @@ func w(object: UIView)->CGFloat{
 func h(object: UIView)->CGFloat{
 	return object.frame.size.height
 }
+/*
+ * 返回单行文字高度
+ */
+func strWidth(str:String,fontSize:CGFloat)->CGFloat{
+	let font:UIFont! = UIFont.systemFont(ofSize: fontSize)
+	
+	let ocStr:NSString = str as NSString
+	let constraintRect = CGSize(width: 999, height: 0)
+	let rect:CGRect = ocStr.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [.font : font], context: nil)
+	return rect.width
+	
+}
 
