@@ -23,11 +23,11 @@ class MainTopView:UIView{
 		for str in titles {
 			
 			let w = str.width(withConstrainedHeight: 0, font: UIFont.systemFont(ofSize: 18))
-			let w1 = strWidth(str: str, fontSize: 18)
 			widths?.append(w)
 		}
 		return titles.count > 0 ? widths! : []
 	}
+	let bottomLine:UIView = UIView.init()
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		sliderSetUp()
@@ -51,11 +51,14 @@ class MainTopView:UIView{
 			btns.append(btn)
 			btn.addTarget(self, action: #selector(clickBtn(sender:)), for: UIControlEvents.touchUpInside)
 		}
-		let lineW = 100
-		let lineX = (Screen_width)
-		let str = "123e2"
-		
-		let bottomLine = UIView.init(frame: CGRect.init(x: Int(lineX), y: 27, width: lineW, height: 2))
+		//default middle
+		let lineW = titleWidths[1]
+		let lineX = (x(object: btns[1])) + (w(object: btns[1]) - titleWidths[1]) * 0.5
+		bottomLine.frame = CGRect.init(x: lineX, y: 27, width: lineW, height: 2)
+		bottomLine.backgroundColor = UIColor.init(hexColor: "333333")
+		bottomLine.layer.cornerRadius = 1
+		bottomLine.layer.masksToBounds = true
+		self.sliderView.addSubview(bottomLine)
 	}
 	
 	@objc func clickBtn(sender:UIButton){
@@ -67,6 +70,11 @@ class MainTopView:UIView{
 				btn.setTitleColor(UIColor.init(hexColor: "acacac"), for: UIControlState.normal)
 			}
 		}
+		UIView.animate(withDuration: 0.25, animations: {
+			let lineW = self.titleWidths[tag]
+			let lineX = (x(object: self.btns[tag])) + (w(object: self.btns[tag]) - self.titleWidths[tag]) * 0.5
+			self.bottomLine.frame = CGRect.init(x: lineX, y: 27, width: lineW, height: 2)
+		})
 		switch tag {
 		case 0:
 			print("0")
@@ -83,6 +91,10 @@ class MainTopView:UIView{
 	}
 	@IBAction func wechatClick(_ sender: UIButton) {
 		print("wechat")
+	}
+	
+	func slide(tag:Int){
+		self.clickBtn(sender: btns[tag])
 	}
 }
 

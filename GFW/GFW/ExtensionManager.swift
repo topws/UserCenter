@@ -57,4 +57,9 @@ extension String {
 	}
 }
 
+extension UIButton {
+	func x()->CGFloat{
+		return self.frame.origin.x
+	}
+}
 
