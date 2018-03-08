@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 //屏幕宏
 let Screen_bounds:CGRect = UIScreen.main.bounds
 let Screen_width:CGFloat = UIScreen.main.bounds.width

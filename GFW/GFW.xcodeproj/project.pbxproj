@@ -11,6 +11,13 @@
 		8F41DA6220039ED800125C7D /* ConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA6120039ED800125C7D /* ConstantManager.swift */; };
 		8F41DA682004675000125C7D /* MainTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F41DA672004675000125C7D /* MainTopView.swift */; };
 		8F41DA6A2004675F00125C7D /* MainTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F41DA692004675F00125C7D /* MainTopView.xib */; };
+		8F8A992D200DA64E00D647F9 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8A992B200DA64E00D647F9 /* MainCollectionViewCell.xib */; };
+		8F8A992E200DA64E00D647F9 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A992C200DA64E00D647F9 /* MainCollectionViewCell.swift */; };
+		8FB484752044070400EF69C9 /* TimeModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB484732044070400EF69C9 /* TimeModuleCell.swift */; };
+		8FB484762044070400EF69C9 /* TimeModuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB484742044070400EF69C9 /* TimeModuleCell.xib */; };
+		8FD39781204422950017FF18 /* AccountantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD39780204422950017FF18 /* AccountantModel.swift */; };
+		8FD397AA204D3B000017FF18 /* LeftTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD397A8204D3B000017FF18 /* LeftTabCell.swift */; };
+		8FD397AB204D3B000017FF18 /* LeftTabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD397A9204D3B000017FF18 /* LeftTabCell.xib */; };
 		BB8E7FF727503DB5A280CCC2 /* Pods_GFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4CA333D20FDCD763334B45 /* Pods_GFW.framework */; };
 		FCA88B86200263EA00CCAC34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B85200263EA00CCAC34 /* AppDelegate.swift */; };
 		FCA88B88200263EA00CCAC34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA88B87200263EA00CCAC34 /* ViewController.swift */; };
@@ -25,6 +32,13 @@
 		8F41DA672004675000125C7D /* MainTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopView.swift; sourceTree = "<group>"; };
 		8F41DA692004675F00125C7D /* MainTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTopView.xib; sourceTree = "<group>"; };
 		8F41DA6C2004754200125C7D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8A992B200DA64E00D647F9 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		8F8A992C200DA64E00D647F9 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FB484732044070400EF69C9 /* TimeModuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModuleCell.swift; sourceTree = "<group>"; };
+		8FB484742044070400EF69C9 /* TimeModuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeModuleCell.xib; sourceTree = "<group>"; };
+		8FD39780204422950017FF18 /* AccountantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountantModel.swift; sourceTree = "<group>"; };
+		8FD397A8204D3B000017FF18 /* LeftTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTabCell.swift; sourceTree = "<group>"; };
+		8FD397A9204D3B000017FF18 /* LeftTabCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftTabCell.xib; sourceTree = "<group>"; };
 		A33B7E21A7647A9C6F0F9363 /* Pods-GFW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFW/Pods-GFW.debug.xcconfig"; sourceTree = "<group>"; };
 		AD3F74E6C752ECC30E548CD3 /* Pods-GFW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFW.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFW/Pods-GFW.release.xcconfig"; sourceTree = "<group>"; };
 		FCA88B82200263EA00CCAC34 /* GFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +83,7 @@
 		8F41DA642004656100125C7D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8FD39780204422950017FF18 /* AccountantModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,6 +100,12 @@
 			children = (
 				8F41DA672004675000125C7D /* MainTopView.swift */,
 				8F41DA692004675F00125C7D /* MainTopView.xib */,
+				8F8A992C200DA64E00D647F9 /* MainCollectionViewCell.swift */,
+				8F8A992B200DA64E00D647F9 /* MainCollectionViewCell.xib */,
+				8FB484732044070400EF69C9 /* TimeModuleCell.swift */,
+				8FB484742044070400EF69C9 /* TimeModuleCell.xib */,
+				8FD397A8204D3B000017FF18 /* LeftTabCell.swift */,
+				8FD397A9204D3B000017FF18 /* LeftTabCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +218,9 @@
 				FCA88B90200263EA00CCAC34 /* LaunchScreen.storyboard in Resources */,
 				FCA88B8D200263EA00CCAC34 /* Assets.xcassets in Resources */,
 				8F41DA6A2004675F00125C7D /* MainTopView.xib in Resources */,
+				8F8A992D200DA64E00D647F9 /* MainCollectionViewCell.xib in Resources */,
+				8FD397AB204D3B000017FF18 /* LeftTabCell.xib in Resources */,
+				8FB484762044070400EF69C9 /* TimeModuleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA88B88200263EA00CCAC34 /* ViewController.swift in Sources */,
+				8FD397AA204D3B000017FF18 /* LeftTabCell.swift in Sources */,
+				8FD39781204422950017FF18 /* AccountantModel.swift in Sources */,
+				8F8A992E200DA64E00D647F9 /* MainCollectionViewCell.swift in Sources */,
+				8FB484752044070400EF69C9 /* TimeModuleCell.swift in Sources */,
 				8F41DA6220039ED800125C7D /* ConstantManager.swift in Sources */,
 				FCA88B86200263EA00CCAC34 /* AppDelegate.swift in Sources */,
 				8F41DA53200323C100125C7D /* ExtensionManager.swift in Sources */,
@@ -379,7 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SSJK4DGTL7;
 				INFOPLIST_FILE = GFW/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qw.GFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SSJK4DGTL7;
 				INFOPLIST_FILE = GFW/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qw.GFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";

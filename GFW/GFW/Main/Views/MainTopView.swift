@@ -15,6 +15,7 @@ class MainTopView:UIView{
 	@IBOutlet weak var wechatBtn: UIButton!
 	@IBOutlet weak var sliderView: UIView!
 	
+	var btnClickBlock:(((NSInteger)) -> (Void))?
 	let titles:Array = ["时光轴","签到","排行"]
 	var btns:Array<UIButton> = []
 	var titleWidths:Array<CGFloat> {
@@ -70,6 +71,7 @@ class MainTopView:UIView{
 				btn.setTitleColor(UIColor.init(hexColor: "acacac"), for: UIControlState.normal)
 			}
 		}
+		btnClickBlock?(sender.tag)
 		UIView.animate(withDuration: 0.25, animations: {
 			let lineW = self.titleWidths[tag]
 			let lineX = (x(object: self.btns[tag])) + (w(object: self.btns[tag]) - self.titleWidths[tag]) * 0.5
