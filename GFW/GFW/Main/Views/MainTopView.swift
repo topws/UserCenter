@@ -90,6 +90,7 @@ class MainTopView:UIView{
 	}
 	@IBAction func moreBtnClick(_ sender: UIButton) {
 		print("more")
+		NotificationCenter.post(customeNotification: GFWNotificationName.clickNavMoreBtn)
 	}
 	@IBAction func wechatClick(_ sender: UIButton) {
 		print("wechat")

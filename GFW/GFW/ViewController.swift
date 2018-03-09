@@ -19,6 +19,8 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
 		self.automaticallyAdjustsScrollViewInsets = false;
 		//set subviews
 		setUpViews()
+		
+		NotificationCenter.default.addObserver(self, selector: #selector(clickMoreBtn), name: GFWNotificationName.clickNavMoreBtn.notificationName, object: nil)
 	
     }
 
@@ -81,5 +83,10 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
 		let tag = scrollView.contentOffset.x / Screen_width
 		self.topV.slide(tag:(Int(tag) > 2 ? 2 : Int(tag)))
 		
+	}
+	
+	@objc func clickMoreBtn(){
+		let vc = AssetsController()
+		self.navigationController?.pushViewController(vc, animated: true)
 	}
 }

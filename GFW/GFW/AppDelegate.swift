@@ -7,26 +7,21 @@
 //
 
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+	
     var window: UIWindow?
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        let vc = ViewController()
+		
+        let vc = RootTabBarController()
         let nav = UINavigationController.init(rootViewController: vc)
         nav.navigationBar.isHidden = true
-        
+		
         let window = UIWindow()
         window.backgroundColor = UIColor.white
         self.window = window
         window.rootViewController = nav
         window.makeKeyAndVisible()
-        
-        
         
         return true
     }

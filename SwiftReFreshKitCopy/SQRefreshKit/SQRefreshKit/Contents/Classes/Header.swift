@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+@objc public protocol RefreshableHeader: class{
+	
+	//视图的高度
+}
